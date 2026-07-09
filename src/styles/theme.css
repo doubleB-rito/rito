@@ -1,0 +1,46 @@
+:root {
+  --rito-black: #050507;
+  --rito-obsidian: #09090d;
+  --rito-graphite: #15151c;
+  --rito-stone: #22212a;
+  --rito-gold: #ba8e48;
+  --rito-gold-soft: #d9bb78;
+  --rito-ivory: #f3ead7;
+  --rito-muted: #a99d87;
+  --rito-border: rgba(217, 187, 120, 0.22);
+  --rito-glow: rgba(186, 142, 72, 0.28);
+}
+
+.font-arcane {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.rito-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(186, 142, 72, 0.13), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(90, 74, 132, 0.12), transparent 30%),
+    linear-gradient(180deg, #09090d, #050507 70%);
+  color: var(--rito-ivory);
+}
+
+.rito-grid {
+  background-image:
+    linear-gradient(rgba(217, 187, 120, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 187, 120, 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.rito-card {
+  border: 1px solid var(--rito-border);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
+    rgba(12, 12, 17, 0.82);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(18px);
+}
+
+.rito-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(217, 187, 120, 0.45), transparent);
+}
