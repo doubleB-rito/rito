@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { HashRouter, Link, Route, Routes } from "react-router-dom";
 
 import { Home } from "./pages/Home/Home";
 import { Narrativa } from "./pages/Narrativa/Narrativa";
@@ -100,7 +100,7 @@ function Nav() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/rito">
+    <HashRouter>
       <Nav />
 
       <Routes>
@@ -117,6 +117,6 @@ export default function App() {
         <Route path="/ordens/ledger" element={<Ledger />} />
         <Route path="/ordens/codigo" element={<Codigo />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
