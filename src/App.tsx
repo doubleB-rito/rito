@@ -100,7 +100,7 @@ function Nav() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/rito">
       <Nav />
 
       <Routes>
